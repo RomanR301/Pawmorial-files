@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="css/datepicker.min.css" />
+		<link rel="stylesheet" href="css/jBox.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Pawmorial</title>
+		<link rel="shortcut icon" type="image/ico" href="images/favicon/pawprint.ico" />
+	</head>
+	<body>
+		<!-- <header class="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="header-logo align-items-center">
+						<img src="./images/main-logo.svg" alt="Pawmorial" />
+					</div>
+					<div class="header-nav__container d-flex align-items-center">
+						<ul class="header-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a id="active-page" href="#">Memorial</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+						<div class="header-login">
+							<button class="login-btn">Log in / Register</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburger">
+				<div class="hamburger__container">
+					<span class="hamburger__lines"></span>
+				</div>
+			</div>
+		</header> -->
+		<header class="header">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="header-logo align-items-center">
+						<a href="index.html"><img src="./images/main-logo.svg" alt="Pawmorial"/></a>
+					</div>
+					<div class="header-nav__container d-flex align-items-center">
+						<ul id="menu-header-menu" class="menu">
+							<li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-84"><a href="/" aria-current="page">Home</a></li>
+							<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="http://pawmorial.randevs.club/about/">About Us</a></li>
+							<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="http://pawmorial.randevs.club/about/">Memorial</a></li>
+							<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="http://pawmorial.randevs.club/about/">FAQ</a></li>
+							<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="http://pawmorial.randevs.club/about/">Blog</a></li>
+						</ul>
+						<!-- <div class="header-login">
+							<button class="login-btn">Log in / Register</button>
+						</div> -->
+
+						<!-- When logged in -->
+						<div class="header-loggedIn">
+							<div class="loggedIn-user">
+								<div>
+									<button class="dropbtn-user">
+										<span class="user-name">Michelle</span>
+										<img class="user-image" src="./images/memorial/memorial-photo16.png" alt="user image" />
+									</button>
+									<div class="dropdown-content__user">
+										<a href="edit-profile.html">Edit Profile</a>
+										<a href="#">Get Help</a>
+										<a href="#">Sign Out</a>
+									</div>
+								</div>
+							</div>
+							<div class="loggedIn-pet">
+								<div>
+									<button class="dropbtn-pet">
+										<span class="pet-name">Marvel</span>
+										<img class="pet-dropdown" src="./images/vektor/drop-down-arrow.svg" alt="drop down" />
+									</button>
+									<div class="dropdown-content__pet">
+										<a href="#">Marvel</a>
+										<a href="#">Marvel</a>
+										<a href="#">Marvel</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hamburger">
+				<div class="hamburger__container">
+					<span class="hamburger__lines"></span>
+				</div>
+			</div>
+		</header>
+
+		<!-- Subheader Section -->
+		<section class="subheader d-flex justify-content-center">
+			<div class="subheader-top d-flex align-items-end justify-content-center">
+				<div class="top-background">
+					<img src="/images/memorial/memorial-subheader-bg.png" alt="" />
+				</div>
+				<div class="container d-flex align-items-center">
+					<div class="subheader-top__title col-lg-11">
+						<h2>Marvel</h2>
+					</div>
+					<!-- When logged in -->
+					<div class="subheader-top__options">
+						<div class="subheader-top__options_edit">
+							<span class="subheader-top__options_image">
+								<img src="./images/vektor/edit.svg" alt="edit" />
+							</span>
+							<span>
+								Edit
+							</span>
+						</div>
+						<div class="subheader-top__options_add">
+							<span class="subheader-top__options_image">
+								<img src="./images/vektor/add.svg" alt="add" />
+							</span>
+							<span>
+								Add
+							</span>
+						</div>
+					</div>
+					<div class="subheader-top__button share-btn">
+						<img class="subheader-top__button_link" src="./images/vektor/next.svg" alt="share" />
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="subheader-bottom">
+					<div class="subheader-bottom__image col-lg-4">
+						<img src="./images/memorial/memorial-subheader-image.png" alt="main picture of a pet" />
+					</div>
+					<div class="subheader-bottom__info">
+						<div class="subheader-bottom__info_date">
+							<p>21 may 2013 – 11April 2019</p>
+						</div>
+						<div class="subheader-bottom__info_subtitle">
+							<p>Beloved Pet, Friend and Nanny</p>
+						</div>
+						<div class="subheader-bottom__info_description">
+							<p>Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world. Marvel was the cutest dog in the world</p>
+						</div>
+						<div class="read-more">
+							<a href="#" class="no-bg-btn">READ MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Memorial Content -->
+		<section class="memorial-content tabs">
+			<div class="container">
+				<div class="row memorial-sticky-nav">
+					<div class="memorial-content__navbar col">
+						<div class="memorial-content__navbar_line"></div>
+						<ul class="memorial-content__nav tabs-list tabs-ul">
+							<li class="memorial-content__nav_link tabs-list-item">
+								<a class="tabs-list-item__link tab-links" onclick="front.openTab(this, 'memorial-0','.tabs')" href="#about">About</a>
+							</li>
+							<li class="memorial-content__nav_link tabs-list-item">
+								<a class="tabs-list-item__link tab-links active" onclick="front.openTab(this, 'memorial-1','.tabs')" href="#photos&videos">photos&videos</a>
+							</li>
+							<li class="memorial-content__nav_link tabs-list-item">
+								<a class="tabs-list-item__link tab-links" onclick="front.openTab(this, 'memorial-2','.tabs')" href="#timeline">timeline</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tabs-wrap">
+					<div class="tab-content" id="memorial-0">
+						<div class="row">
+							<form class="about-memorial" action="">
+								<div class="about-memorial__section">
+									<div class="about-memorial__section_heading">
+										<div class="about-memorial__section_heading_title">
+											Privacy Settings
+										</div>
+									</div>
+									<div class="about-memorial__section_content">
+										<div class="section-privacy">
+											<div class="section-privacy__checkbox">
+												<input type="checkbox" name="keep it private" id="about-memorial-private" />
+												<label for="about-memorial-private">Keep this board private</label>
+											</div>
+											<div class="section-privacy__helper">
+												You must invite or approve users
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-memorial__section">
+									<div class="about-memorial__section_heading">
+										<div class="about-memorial__section_heading_title">
+											Description
+										</div>
+									</div>
+									<div class="about-memorial__section_content">
+										<div class="section-description">
+											<div class="section-description__textarea">
+												<textarea name="description about pet" placeholder="Type a description of your pet...1000 words maximum"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-memorial__section">
+									<div class="about-memorial__section_heading">
+										<div class="about-memorial__section_heading_title">
+											Basic information
+										</div>
+									</div>
+									<div class="about-memorial__section_content">
+										<div class="section-information">
+											<div class="section-information__birth">
+												<label for="birth-date">Date of birth</label>
+												<div class="section-information__birth_input">
+													<span class="section-information__birth_calendar"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
+													<input type="text" class="datepicker-here" name="birth date" id="birth-date" placeholder="Pick a date" />
+												</div>
+												<label for="birth-place">Place of birth</label>
+												<input type="text" name="birth place" id="birth-place" placeholder="Type a place" />
+											</div>
+											<div class="section-information__checkbox">
+												<input type="checkbox" name="is passed away" id="about-memorial-passed-away" />
+												<label for="about-memorial-passed-away">Pet passed away</label>
+											</div>
+											<div class="section-information__passed">
+												<label for="passed-date">Date of passing away</label>
+												<div class="section-information__passed_input">
+													<span class="section-information__passed_calendar"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
+													<input type="text" class="datepicker-here" name="passed date" id="passed-date" placeholder="Pick a date" disabled />
+												</div>
+												<label for="passed-place">Place of passing away</label>
+												<input type="text" name="passed place" id="passed-place" placeholder="Type a place" disabled />
+											</div>
+											<div class="section-information__pet">
+												<div class="section-information__pet_species">
+													<label for="pet-species">Pet species</label>
+													<input type="text" name="pet species" id="pet-species" placeholder="Type species" />
+												</div>
+												<div class="section-information__pet_breed">
+													<label for="pet-breed">Pet breed</label>
+													<input type="text" name="pet breed" id="pet-breed" placeholder="Type breed" />
+												</div>
+												<div class="section-information__pet_sex">
+													<label for="pet-sex">Sex</label>
+													<img src="./images/vektor/drop-down-arrow.svg" alt="select" />
+													<select name="pet sex" id="pet-sex">
+														<option hidden selected>Choose sex</option>
+														<option value="Mle">Male</option>
+														<option value="Male neutered">Male neutered</option>
+														<option value="Female">Female</option>
+														<option value="Female neutered">Female neutered</option>
+													</select>
+												</div>
+											</div>
+											<div class="section-information__color">
+												<label for="unique-feature">Wool / suit / color</label>
+												<input type="text" name="unique feature" id="unique-feature" placeholder="Unique features your pet has / had " />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-memorial__section">
+									<div class="about-memorial__section_heading">
+										<div class="about-memorial__section_heading_title">
+											Health Care Provider
+										</div>
+									</div>
+									<div class="about-memorial__section_content">
+										<div class="section-health">
+											<div class="section-health__clinic">
+												<label for="health-clinic">Name of veterinary clinic</label>
+												<input type="text" name="clinic" id="health-clinic" placeholder="Type a clinic" />
+											</div>
+											<div class="section-health__veterinarian">
+												<label for="health-veterinarian">Name of veterinary clinic</label>
+												<input type="text" name="veterinarian" id="health-veterinarian" placeholder="Type a name" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-memorial__section">
+									<div class="about-memorial__section_heading">
+										<div class="about-memorial__section_heading_title">
+											Personal data
+											<div class="about-memorial__section_heading_btn">
+												<img src="./images/vektor/add.svg" alt="add" />
+												<span>ADD</span>
+											</div>
+										</div>
+
+										<!-- <div class="about-memorial__section_heading_button">
+													<a class="about-memorial__section_heading_button_container" href="#">
+														<span class="about-memorial__section_heading_button_image">
+															<img src="./images/vektor/edit.svg" alt="edit" />
+														</span>
+														<span class="about-memorial__section_heading_button_text">
+															Edit
+														</span>
+													</a>
+												</div> button as on a mockup if needed, set title's width to 80%-->
+									</div>
+									<div class="about-memorial__section_content">
+										<div class="section-data">
+											<div class="section-data__meal">
+												<label for="favourite-meal">Favourite meal</label>
+												<input type="text" name="favourite meal" id="favourite-meal" placeholder="Type a meal" />
+											</div>
+											<div class="section-data__person">
+												<label for="favourite-person">Favourite person (-s)</label>
+												<input type="text" name="favourite person" id="favourite-person" placeholder="Type a name (-s)" />
+											</div>
+											<div class="section-data__pastime">
+												<label for="favourite-pastime">Favourite pastime</label>
+												<input type="text" name="favourite pastime" id="favourite-pastime" placeholder="Walks, eatings..." />
+											</div>
+										</div>
+										<div class="section-buttons">
+											<input class="red-btn section-buttons__cancel" type="submit" value="Cancel" />
+											<input class="red-btn section-buttons__save" type="submit" value="Save changes" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-content active" id="memorial-1">
+						<div class="row">
+							<div class="content-gallery">
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/doge.jpg" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo2.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo3.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo7.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo5.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo6.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo7.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo8.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo9.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo10.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo11.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo12.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo13.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo14.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo15.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="content-gallery__item js-open-modal" data-modal="single-memory">
+									<figure>
+										<div class="content-gallery__item_image">
+											<img src="./images/memorial/memorial-photo16.png" alt="memory post" />
+											<div class="content-gallery__item_like">
+												<img src="./images/vektor/like.svg" alt="like" />
+											</div>
+											<span class="content-gallery__item_share share-btn">
+												<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+													<desc>Created with Lunacy</desc>
+													<path
+														d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+														stroke="none"
+													/>
+												</svg>
+											</span>
+										</div>
+										<figcaption class="content-gallery__item_title">
+											First days of their friendship. Forever love
+											<span class="content-gallery__item_dots more-btn">
+												<img src="./images/vektor/more.svg" alt="more" />
+											</span>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+
+						<!-- When no posts -->
+						<div class="row justify-content-center">
+							<div class="col-lg-7">
+								<div class="memorial-new">
+									<div class="memorial-new__image">
+										<img src="./images/logo-pawmorial.svg" alt="" />
+									</div>
+									<div class="memorial-new__text main-page-heading">
+										<p>There is no memories, but you can create it in few moments</p>
+									</div>
+									<div class="memorial-new__button">
+										<a class="memorial-new__button_btn red-btn js-open-modal" data-modal="create-memory" href="#">Create new memory</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" id="memorial-2">
+						<div class="row">
+							<div class="timeline-centered">
+								<div class="timeline-buttons">
+									<a href="#" class="timeline-buttons__play">
+										<img src="./images/vektor/play-button.svg" alt="play" />
+										<span>
+											play
+										</span>
+									</a>
+									<a href="#" class="timeline-buttons__add">
+										<img src="./images/vektor/add.svg" alt="add" />
+										<span>
+											add
+										</span>
+									</a>
+								</div>
+								<div class="timeline-container">
+									<div class="timeline-item">
+										<div class="content-gallery__item">
+											<figure>
+												<div class="content-gallery__item_image">
+													<img src="./images/memorial/memorial-photo2.png" alt="memory post" />
+													<div class="content-gallery__item_like">
+														<img src="./images/vektor/like.svg" alt="like" />
+													</div>
+													<span class="content-gallery__item_share share-btn">
+														<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+															<desc>Created with Lunacy</desc>
+															<path
+																d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+																stroke="none"
+															/>
+														</svg>
+													</span>
+												</div>
+												<figcaption class="content-gallery__item_title">
+													First days of their friendship. Forever love
+													<span class="content-gallery__item_dots more-btn">
+														<img src="./images/vektor/more.svg" alt="more" />
+													</span>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="timeline-item__date">
+											<span>1 December 2017</span>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="content-gallery__item">
+											<figure>
+												<div class="content-gallery__item_image">
+													<img src="./images/memorial/memorial-photo11.png" alt="memory post" />
+													<div class="content-gallery__item_like">
+														<img src="./images/vektor/like.svg" alt="like" />
+													</div>
+													<span class="content-gallery__item_share share-btn">
+														<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+															<desc>Created with Lunacy</desc>
+															<path
+																d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+																stroke="none"
+															/>
+														</svg>
+													</span>
+												</div>
+												<figcaption class="content-gallery__item_title">
+													First days of their friendship. Forever love
+													<span class="content-gallery__item_dots more-btn">
+														<img src="./images/vektor/more.svg" alt="more" />
+													</span>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="timeline-item__date">
+											<span>17 October 2018 </span>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="content-gallery__item">
+											<figure>
+												<div class="content-gallery__item_image">
+													<img src="./images/memorial/memorial-photo12.png" alt="memory post" />
+													<div class="content-gallery__item_like">
+														<img src="./images/vektor/like.svg" alt="like" />
+													</div>
+													<span class="content-gallery__item_share share-btn">
+														<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+															<desc>Created with Lunacy</desc>
+															<path
+																d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+																stroke="none"
+															/>
+														</svg>
+													</span>
+												</div>
+												<figcaption class="content-gallery__item_title">
+													First days of their friendship. Forever love First days of their friendship. Forever love
+													<span class="content-gallery__item_dots more-btn">
+														<img src="./images/vektor/more.svg" alt="more" />
+													</span>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="timeline-item__date">
+											<span>11 December 2017</span>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="content-gallery__item">
+											<figure>
+												<div class="content-gallery__item_image">
+													<img src="./images/memorial/memorial-photo13.png" alt="memory post" />
+													<div class="content-gallery__item_like">
+														<img src="./images/vektor/like.svg" alt="like" />
+													</div>
+													<span class="content-gallery__item_share share-btn">
+														<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+															<desc>Created with Lunacy</desc>
+															<path
+																d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+																stroke="none"
+															/>
+														</svg>
+													</span>
+												</div>
+												<figcaption class="content-gallery__item_title">
+													First days of their friendship. Forever love
+													<span class="content-gallery__item_dots more-btn">
+														<img src="./images/vektor/more.svg" alt="more" />
+													</span>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="timeline-item__date">
+											<span>03 September 2017</span>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="content-gallery__item">
+											<figure>
+												<div class="content-gallery__item_image">
+													<img src="./images/memorial/memorial-photo14.png" alt="memory post" />
+													<div class="content-gallery__item_like">
+														<img src="./images/vektor/like.svg" alt="like" />
+													</div>
+													<span class="content-gallery__item_share share-btn">
+														<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+															<desc>Created with Lunacy</desc>
+															<path
+																d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+																stroke="none"
+															/>
+														</svg>
+													</span>
+												</div>
+												<figcaption class="content-gallery__item_title">
+													First days of their friendship. Forever love
+													<span class="content-gallery__item_dots more-btn">
+														<img src="./images/vektor/more.svg" alt="more" />
+													</span>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="timeline-item__date">
+											<span>11 August 2017</span>
+										</div>
+									</div>
+									<div class="timeline-item">
+										<div class="content-gallery__item">
+											<figure>
+												<div class="content-gallery__item_image">
+													<img src="./images/memorial/memorial-photo15.png" alt="memory post" />
+													<div class="content-gallery__item_like">
+														<img src="./images/vektor/like.svg" alt="like" />
+													</div>
+													<span class="content-gallery__item_share share-btn">
+														<svg viewBox="0 0 29 27" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+															<desc>Created with Lunacy</desc>
+															<path
+																d="M28.6927 8.96064L20.4069 0.320707C20.2019 0.106922 19.9592 0 19.6787 0C19.3982 0 19.1554 0.106922 18.9505 0.320707C18.7455 0.53461 18.6429 0.787759 18.6429 1.08021L18.6429 5.40018L15.0179 5.40018C7.32523 5.40018 2.60544 7.66711 0.857427 12.2009C0.28579 13.7082 0 15.5815 0 17.8203C0 19.6876 0.685114 22.2245 2.05523 25.4308C2.08754 25.5097 2.14399 25.6444 2.22505 25.8356C2.30605 26.0267 2.37877 26.1955 2.4435 26.3419C2.50846 26.4879 2.57863 26.6117 2.65407 26.7128C2.78342 26.9041 2.93454 27 3.10719 27C3.26902 27 3.39581 26.9438 3.48758 26.8313C3.57912 26.7189 3.62498 26.5781 3.62498 26.4098C3.62498 26.3082 3.61149 26.1594 3.58445 25.9624C3.55747 25.7654 3.54392 25.6335 3.54392 25.5659C3.48991 24.8012 3.46293 24.1088 3.46293 23.4905C3.46293 22.3543 3.55747 21.3362 3.74611 20.4362C3.93503 19.5361 4.19662 18.7572 4.53115 18.099C4.86563 17.4406 5.29704 16.8729 5.82582 16.3947C6.35438 15.9165 6.92341 15.5257 7.53297 15.2219C8.14264 14.9181 8.86006 14.679 9.68541 14.5047C10.5107 14.3303 11.3414 14.2093 12.1776 14.1418C13.0138 14.0742 13.9605 14.0406 15.0179 14.0406L18.6429 14.0406L18.6429 18.3607C18.6429 18.6532 18.7453 18.9064 18.9501 19.12C19.1553 19.3336 19.398 19.4406 19.6783 19.4406C19.9588 19.4406 20.4069 19.12 20.4069 19.12L28.6926 10.4798C28.8976 10.266 29 10.013 29 9.7205C28.9999 9.42804 28.8976 9.17483 28.6927 8.96064Z"
+																stroke="none"
+															/>
+														</svg>
+													</span>
+												</div>
+												<figcaption class="content-gallery__item_title">
+													First days of their friendship. Forever love
+													<span class="content-gallery__item_dots more-btn">
+														<img src="./images/vektor/more.svg" alt="more" />
+													</span>
+												</figcaption>
+											</figure>
+										</div>
+										<div class="timeline-item__date">
+											<span>01 January 2018 </span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- When there are posts-->
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12 col-xs-12 footer-logo">
+						<div class="footer-logo__image">
+							<a href="index.html"><img src="./images/main-logo.svg" alt="Pawmorial"/></a>
+						</div>
+						<div class="footer-logo__text">
+							<p>
+								Looking for additional features? Contact us at <span><a class="footer-link" href="mailto:info@pawmorial.com"> info@pawmorial.com</a></span>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-xs-12 footer-memorials">
+						<div class="footer-memorials__heading">
+							<h4>Memorials</h4>
+						</div>
+						<div class="footer-memorials__list">
+							<ul>
+								<li><a href="#">Create a memorial</a></li>
+								<li><a href="#">Give a gift</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-xs-12 footer-about">
+						<div class="footer-about__heading">
+							<h4>About Us</h4>
+						</div>
+						<div class="footer-about__list">
+							<ul>
+								<li><a href="#">Our Story</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12 col-xs-12 footer-join">
+						<div class="footer-join__heading">
+							<h4>Join our community</h4>
+						</div>
+						<div class="footer-join__input">
+							<form action="">
+								<input type="email" class="footer-email" name="subscribe-email" placeholder="Type your email" />
+								<input type="submit" class="btn footer-submit" value="Sign Up" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex justify-content-center align-items-center">
+							<p class="copy-text">Copyright © 2019 Peymorials Ltd. All Rights Reserved. Read our Terms and Conditions & Privacy Policy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+		<!-- Modal -->
+
+		<!-- create memory modal  -->
+
+		<div class="modal modal-create-memory" data-modal="create-memory">
+			<span class="modal-close js-close-modal"></span>
+			<div class="create-memory__content">
+				<form action="">
+					<div class="create-memory__left">
+						<div class="create-memory__left_image">
+							<div class="create-memory__image_outer">
+								<div class="create-memory__image_inner">
+									<div class="slider">
+										<ul id="frames" class="frames"></ul>
+										<div class="nav-dots"></div>
+									</div>
+									<label for="create-memory-image">
+										<div class="create-memory__image_inner_upload">
+											<div class="create-memory__image_inner_upload_pic">
+												<img src="./images/vektor/upload.svg" alt="upload" />
+											</div>
+											<div class="input-wrapper">
+												<input type="file" name="" id="create-memory-image" multiple />
+											</div>
+											<div class="create-memory__image_inner_upload_click">
+												Drag and Drop or click to upload
+											</div>
+											<div class="create-memory__image_inner_upload_helper">
+												(you can add few files in one time by clicking SHIFT button)
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="create-memory__image_text">
+									Please upload .jpg files less than to 10 MB
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="create-memory__right">
+						<div class="create-memory__right_title">
+							<input type="text" name="memory title" placeholder="Add a title" />
+						</div>
+						<div class="create-memory__right_hashtag">
+							<input type="text" name="memory hashtag" value="#" placeholder="#" />
+						</div>
+						<div class="create-memory__right_description">
+							<textarea name="memory description" placeholder="Add a description"></textarea>
+						</div>
+						<div class="create-memory__right_datepicker">
+							<label for="create-memory__datepicker">
+								Pick date of post
+							</label>
+							<span class="create-memory__datepicker_calendar"><img src="./images/vektor/calendar-blue.svg" alt="calendar"/></span>
+							<span class="create-memory__datepicker_arrow"><img src="./images/vektor/drop-down-arrow.svg" alt="pick a date"/></span>
+							<input type="text" class="datepicker-here" data-position="top left" name="date of post" id="create-memory__datepicker" placeholder="Pick date" readonly />
+						</div>
+						<div class="create-memory__right_type">
+							<div class="create-memory__right_type_heading">
+								Memory type
+							</div>
+							<ul class="create-memory__right_type_list">
+								<li class="type-list__item">
+									<input type="checkbox" name="type photo" id="type-photo" />
+									<label for="type-photo">Photo</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type video" id="type-video" />
+									<label for="type-video">Video</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type hashtag" id="type-hashtag" />
+									<label for="type-hashtag">#makingeachdaycount</label>
+								</li>
+								<li class="type-list__item">
+									<input type="checkbox" name="type timeline" id="type-timeline" />
+									<label for="type-timeline">Timeline</label>
+								</li>
+							</ul>
+						</div>
+						<div class="create-memory__right_button">
+							<button class="red-btn create-memory__right_btn">
+								Create memory
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal" data-modal="single-memory">
+			<div class="memory-popup">
+				<div class="memory-popup__container">
+					<div class="memory-popup__left">
+						<div class="memory-popup__image">
+							<img src="./images/1.jpg" alt="doge with ball" />
+							<div class="memory-popup__image_nav">
+								<!-- change later -->
+							</div>
+						</div>
+					</div>
+					<div class="memory-popup__right">
+						<div class="memory-popup__heading">
+							<div class="memory-popup__heading_name">
+								<div class="memory-popup__heading_name_icon">
+									<img src="./images/1.jpg" alt="picture of post" />
+								</div>
+								<div class="memory-popup__heading_name_pet">
+									<span>Marvel</span>
+								</div>
+							</div>
+							<div class="memory-popup__heading_date">
+								<span>Sept 12, 2018</span>
+							</div>
+							<span class="modal-close js-close-modal"></span>
+						</div>
+						<div class="memory-popup__title">
+							<span class="memory-popup__title_text">
+								First days of their friendship. Forever love
+								<span class="memory-popup__title_hashtag">#friendshipLily</span>
+							</span>
+						</div>
+						<div class="memory-popup__comments">
+							<div class="memory-popup__comment">
+								<div class="memory-popup__comment_data">
+									<div class="comment-author">
+										<span>Lea</span>
+									</div>
+									<div class="comment-text">
+										<span>Remember this moment so clearly!</span>
+									</div>
+								</div>
+								<div class="memory-popup__comment_info">
+									<div class="comment-time">
+										<span>1h</span>
+									</div>
+									<div class="comment-reply">
+										<button>Reply</button>
+									</div>
+								</div>
+							</div>
+							<div class="memory-popup__comment">
+								<div class="memory-popup__comment_data">
+									<div class="comment-author">
+										<span>PapaJohn</span>
+									</div>
+									<div class="comment-text">
+										<span>This days was tottally amazing</span>
+									</div>
+								</div>
+								<div class="memory-popup__comment_info">
+									<div class="comment-time">
+										<span>30m</span>
+									</div>
+									<div class="comment-reply">
+										<button>Reply</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="memory-popup__footer">
+							<div class="memory-popup__options">
+								<div class="memory-popup__options_like">
+									<img src="./images/vektor/like-icon.svg" alt="like" />
+									<span>257 likes</span>
+								</div>
+								<div class="memory-popup__options_share share-btn">
+									<img src="./images/vektor/share-icon.svg" alt="share" />
+								</div>
+								<div class="memory-popup__options_more more-btn">
+									<img src="./images/vektor/more.svg" alt="more" />
+								</div>
+							</div>
+							<div class="memory-popup__postcomment">
+								<form action="">
+									<input type="text" name="" id="" placeholder="Write a comment..." />
+									<input type="submit" value="Post" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-create-memorial">
+			<div class="create-memorial__heading">
+				<h2>Create a Memorial</h2>
+				<div class="close-modal">
+					<img src="./images/vektor/close-black.svg" alt="close button" />
+				</div>
+			</div>
+			<div class="create-memorial__content">
+				<div class="create-memorial__left">
+					<form action="">
+						<div class="create-memorial__left_heading">
+							Who are you creating this memorial page for?
+						</div>
+						<div class="create-memorial__left_name">
+							<input type="text" name="pet name" placeholder="Type Pet Name" />
+						</div>
+						<div class="create-memorial__left_pickers_birth">
+							<div class="date-of-birth">
+								<label for="birth-date">
+									Date of birth
+								</label>
+								<span class="birth-date-icon"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
+								<input type="text" class="datepicker-here" name="Date of birth" id="birth-date" placeholder="Pick date" readonly />
+							</div>
+							<div class="place-of-birth">
+								<label for="birth-place">
+									Place of birth
+								</label>
+								<input type="text" name="Place of birth" id="birth-place" placeholder="Type a place" />
+							</div>
+						</div>
+						<div class="create-memorial__left_checkbox">
+							<input type="checkbox" name="is passed away" id="passed-away" />
+							<label for="passed-away">Pet passed away</label>
+						</div>
+						<div class="create-memorial__left_pickers_passed">
+							<div class="date-of-passing-away">
+								<label for="passing-away-date">
+									Date of passing away
+								</label>
+								<span class="passing-away-date-icon"><img src="./images/vektor/calendar.svg" alt="calendar"/></span>
+								<input type="text" class="datepicker-here" data-position="top left" name="Date of passing away" id="passing-away-date" placeholder="Pick date" disabled readonly />
+							</div>
+							<div class="place-of-passing-away">
+								<label for="passing-away-place">
+									Place of passing away
+								</label>
+								<input type="text" name="Place of passing away" id="passing-away-place" placeholder="Type a place" disabled />
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="create-memorial__right">
+					<form action="">
+						<div class="create-memorial__right_heading">
+							Set Profile Photo
+						</div>
+						<div class="create-memorial__right_image">
+							<div class="background-photo">
+								<div class="background-photo__inner">
+									<div class="background-photo__inner_upload">
+										<div class="background-photo__inner_image">
+											<img src="./images/vektor/upload.svg" alt="upload background photo" />
+										</div>
+										<div class="background-photo__inner_text">
+											Background photo
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="profile-photo">
+								<div class="profile-photo__inner">
+									<div class="profile-photo__inner_upload">
+										<div class="profile-photo__inner_image">
+											<img src="./images/vektor/upload.svg" alt="upload profile photo" />
+										</div>
+										<div class="profile-photo__inner_text">
+											Profile photo
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photo-text">
+								Drag and Drop or click to upload or you can do it later
+							</div>
+						</div>
+						<div class="create-memorial__right_settings">
+							<p>Privacy settings</p>
+						</div>
+						<div class="create-memorial__right_checkbox">
+							<input type="checkbox" name="board private" id="board-private" />
+							<label for="board-private">Keep this board private</label>
+						</div>
+						<span class="right-checkbox__helper">You must invite or approve users</span>
+						<div class="create-memorial__right_buttons">
+							<button class="btn create-memorial__cancel">Cancel</button>
+							<button class="btn create-memorial__create">Create memorial</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="black-fill"></div>
+		<div class="overlay js-overlay-modal"></div>
+		<div class="preloader">
+			<div class="preloader-logo">
+				<img src="./images/logo-pawmorial.svg" alt="" />
+				<span>Happy Memories are Loading</span>
+			</div>
+		</div>
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+		<script src="libs/jQuery/jQuery.min.js"></script>
+		<script src="libs/datepicker/datepicker.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+		<script src="libs/jBox/jBox.min.js"></script>
+		<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+		<script src="libs/masonry/masonry.pkgd.min.js"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/upload-images.js"></script>
+		<script src="js/tabs.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
