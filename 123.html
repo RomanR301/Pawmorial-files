@@ -1,0 +1,108 @@
+<div class="modal" data-modal="single-memory-<?= $thisPostID ?>">
+	<div class="memory-popup">
+		<div class="memory-popup__container">
+			<div class="memory-popup__left">
+				<?php // var_dump($thisPostID);?>
+				<div class="memory-popup__image">
+					<img src="<?php echo wp_get_attachment_image_url($modalImageMeta, 'full'); ?>">
+					<div class="memory-popup__image_nav">
+						<!-- change later -->
+					</div>
+				</div>
+			</div>
+			<div class="memory-popup__right">
+				<div class="memory-popup__heading">
+					<div class="memory-popup__heading_name">
+						<div class="memory-popup__heading_name_icon">
+										<?php
+										$user_meta_photo = get_the_author_meta('profile_photo', $current_user->ID);
+										?>
+							<img src="<?php echo wp_get_attachment_image_url($user_meta_photo); ?>">
+						</div>
+						<div class="memory-popup__heading_name_pet">
+							<span>
+								<?php the_title(); ?>
+							</span>
+						</div>
+          </div>
+          <div class="memory-popup__heading_date">
+            <span>
+                <?php
+                if (!empty(get_post_meta($thisPostID, 'datapicker_date', true))) :
+                    echo get_post_meta($thisPostID, 'datapicker_date', true); ?>
+                <?php else :
+                    echo the_date();
+                    ?>
+                <?php endif; ?>
+            </span>
+          </div>
+          <span class="modal-close js-close-modal"></span>
+				</div>
+		    <div class="memory-popup__title">
+          <span class="memory-popup__title_text">
+            <?php the_content(); ?>
+            <span class="memory-popup__title_hashtag"><?php echo get_post_meta($thisPostID, 'post_hashtag', true); ?> </span>
+          </span>
+				</div>
+				<div class="memory-popup__comments">
+          <?php
+          $commentQuery = array(
+              'post_id' => $thisPostID,
+              'order' => 'DESC'
+          );
+          $comments = get_comments($commentQuery);
+          foreach ($comments as $comment) : ?>
+              <?php //var_dump($comment);?>
+          <div class="memory-popup__comment">
+            <div class="memory-popup__comment_data">
+              <div class="comment-author">
+                <span><?php echo $comment->comment_author; ?></span>
+              </div>
+              <div class="comment-text">
+                <span><?php echo $comment->comment_content; ?></span>
+              </div>
+            </div>
+            <div class="memory-popup__comment_info">
+              <div class="comment-time">
+                <span><?php // echo $comment->comment_date;?></span>
+              </div>
+              <div class="comment-reply">
+                  <!--                                                                <button>Reply</button>-->
+              </div>
+            </div>
+          </div>
+        <?php endforeach; ?>
+        <!--Start comment data-->
+        </div>
+        <div class="memory-popup__footer">
+          <div class="memory-popup__options">
+            <div class="memory-popup__options_like">
+              <img src="<?php echo bloginfo('template_directory'); ?>/images/vektor/like-icon.svg"
+                            alt="like"/>
+              <span>257 likes</span>
+            </div>
+            <div class="memory-popup__options_share share-btn">
+              <img src="<?php echo bloginfo('template_directory'); ?>/images/vektor/share-icon.svg"
+                      alt="share"/>
+            </div>
+            <div class="memory-popup__options_more more-btn">
+              <img src="<?php echo bloginfo('template_directory'); ?>/images/vektor/more.svg"
+                  alt="more"/>
+            </div>
+          </div>
+              <!--Comment form-->
+          <div class="memory-popup__postcomment">
+            <form action="<?php echo home_url(); ?>/wp-comments-post.php"
+                  method="post">
+              <input type="text" id="comment" name="comment"
+                        placeholder="Write a comment..."/>
+              <input type='hidden' name='comment_post_ID'
+                        value='<?= $thisPostID ?>' id='comment_post_ID'/>
+              <input type="submit" value="Post"/>
+            </form>
+          </div>
+        </div>
+			</div>
+    </div>
+	</div>
+</div>
